@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "File";
+}
+
+<h1>File</h1>
+
+<form asp-controller="Home" asp-action="UploadFile" method="post"
+      enctype="multipart/form-data">
+
+    <input type="file" name="file" />
+    <button type="submit">Upload File</button>
+</form>
