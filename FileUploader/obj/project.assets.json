@@ -4720,16 +4720,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "FileService/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "compile": {
-          "bin/placeholder/FileService.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FileService.dll": {}
-        }
       }
     }
   },
@@ -12942,16 +12932,10 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "FileService/1.0.0": {
-      "type": "project",
-      "path": "../FileService/FileService.csproj",
-      "msbuildProject": "../FileService/FileService.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "FileService >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
@@ -12987,11 +12971,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {
-            "D:\\Workshop\\Godly\\FileUploadAPI\\FileService\\FileService.csproj": {
-              "projectPath": "D:\\Workshop\\Godly\\FileUploadAPI\\FileService\\FileService.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
