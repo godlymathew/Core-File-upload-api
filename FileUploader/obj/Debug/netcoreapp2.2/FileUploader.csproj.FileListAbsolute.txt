@@ -28,3 +28,4 @@ D:\Workshop\Godly\FileUploadAPI\FileUploader\obj\Debug\netcoreapp2.2\FileUploade
 D:\Workshop\Godly\FileUploadAPI\FileUploader\obj\Debug\netcoreapp2.2\FileUploader.pdb
 D:\Workshop\Godly\FileUploadAPI\FileUploader\obj\Debug\netcoreapp2.2\FileUploader.csproj.CopyComplete
 D:\Workshop\Godly\FileUploadAPI\FileUploader\obj\Debug\netcoreapp2.2\Razor\Views\Home\File.g.cshtml.cs
+D:\Workshop\Godly\FileUploadAPI\FileUploader\obj\Debug\netcoreapp2.2\FileUploader.csprojAssemblyReference.cache

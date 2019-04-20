@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace FileUploader.APIController
@@ -17,6 +19,9 @@ namespace FileUploader.APIController
         [HttpPost]
         public async Task<IActionResult> Post(string id)
         {
+            IEnumerable<string> headerValues = Request.Headers["Authorization"];
+            var header = headerValues.FirstOrDefault();
+            var xcust  = Request.Headers["xcust"];
             var filePath = @"D:\Workshop\" + id; //+ Guid.NewGuid() + ".png";
             if (Request.HasFormContentType)
             {

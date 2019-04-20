@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUploader", "FileUploader\FileUploader.csproj", "{501B96EC-445D-4AC5-9649-7D5BD01B2AEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService", "FileService\FileService.csproj", "{4012BEDD-AF61-498C-9343-65701C4A5364}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{501B96EC-445D-4AC5-9649-7D5BD01B2AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{501B96EC-445D-4AC5-9649-7D5BD01B2AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{501B96EC-445D-4AC5-9649-7D5BD01B2AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4012BEDD-AF61-498C-9343-65701C4A5364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4012BEDD-AF61-498C-9343-65701C4A5364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4012BEDD-AF61-498C-9343-65701C4A5364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4012BEDD-AF61-498C-9343-65701C4A5364}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

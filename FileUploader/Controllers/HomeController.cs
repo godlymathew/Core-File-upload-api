@@ -11,7 +11,7 @@ namespace FileUploader.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("file");
         }
 
         public IActionResult Privacy()
@@ -25,7 +25,6 @@ namespace FileUploader.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        [Route("home/file")]
         public IActionResult File()
         {
             return View();
@@ -36,19 +35,29 @@ namespace FileUploader.Controllers
         public IActionResult UploadFile(IFormFile file)
         {
             if (file == null || file.Length == 0)
+            {
                 return Content("file not selected");
+            }
 
             var client = new HttpClient();
 
             byte[] data;
             using (var br = new BinaryReader(file.OpenReadStream()))
-                data = br.ReadBytes((int)file.OpenReadStream().Length);
-            ByteArrayContent bytes = new ByteArrayContent(data);
-            MultipartFormDataContent multiContent = new MultipartFormDataContent
             {
-                { bytes, "file", file.FileName }
-            };
-            var result = client.PostAsync("http://localhost:2821/api/upload/" + file.FileName, multiContent).Result;
+                data = br.ReadBytes((int)file.OpenReadStream().Length);
+            }
+
+
+            //ByteArrayContent bytes = new ByteArrayContent(data);
+            //MultipartFormDataContent multiContent = new MultipartFormDataContent
+            //{
+            //    { bytes, "file", file.FileName }
+            //};
+
+            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "Your Oauth token");
+            //client.DefaultRequestHeaders.Add("xcust", "ok");
+
+            //var result = client.PostAsync("http://localhost:2821/api/upload/" + file.FileName, multiContent).Result;
             return RedirectToAction("file");
         }
     }
